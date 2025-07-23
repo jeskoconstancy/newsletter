@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    /* Header */
+    .header {
+      background: #fff;
+      color: #fff;
+      padding: 32px 0 24px 0;
+      text-align: center;
+    }
+    .logo-placeholder {
+      width: 120px;
+      height: 60px;
+      margin: 0 auto 8px auto;
+      background: #fff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1e90ff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    /* Footer */
+    .footer {
+      background: #55587f;
+      color: #fff;
+      text-align: center;
+      padding: 24px 10px 18px 10px;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #55587f;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    /* Button Styles */
+    .button-wrapper {
+        text-align: center;
+        padding: 20px 0 30px 0; /* Mehr Platz unter dem Button */
+    }
+    .button {
+      display: inline-block; /* Für besseres Verhalten in E-Mail-Clients */
+      background-color: #bb1b37;
+      color: #ffffff !important; /* !important um sicherzustellen, dass die Farbe nicht überschrieben wird */
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      border: 1px solid #bb1b37; /* Border für bessere Darstellung in manchen Clients */
+      -webkit-text-size-adjust: none; /* iOS fix */
+    }
+    .button:hover {
+      background-color: #55587f;
+      border-color: #55587f;
+    }
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #ffffff; padding: 0; margin: 0;">
+   <div class="container">
+        <!-- Header -->
+    <div class="header">
+      <div class="logo-placeholder">
+        <img width="540" border="0" align="center" style="outline-style:none;text-decoration:none;border:none;font-size:12px;line-height:16px;margin:0;align:center;" src="https://c.emailsys1a.net/mailingassets/f77c2ef563fc117f91c413b124d1686888a24b5d.jpg#rs-inlineimage" alt="">
+      </div>
+    </div>
+  <table align="center" width="100%" cellpadding="0" cellspacing="0" style="max-width: 700px; background-color: #ffffff;">
+    <tr>
+      <td style="text-align: center;">
+        <img src="https://www.sieger-onlineshop.de/pub/media/wysiwyg/sieger/newsletter_bilder/moodbilder/Sirio_G-HG_Gruppenbild_Model_5782-55_6782-150.jpg"" alt="Titelbild" style="width: 100%; max-height: 300px; object-fit: cover;" />
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 20px; text-align: center;">
+        <h1 style="font-size: 24px; margin-bottom: 10px;"></h1>
+        <p style="font-size: 16px; color: #333;">Dear Madam and Sir,
+
+As we transition into the vibrant summer season, we invite you to explore our exclusive clearance offers on high-quality gardening furniture. Enjoy discounts of up to 50% on selected items, allowing you to enhance your outdoor space without compromising on quality. All products come with a three-year warranty, ensuring you create a beautiful garden retreat that you and your family can enjoy for years to come. Hurry, as these exceptional deals are valid only while stocks last. Embrace the warmth of summer by transforming your garden into the perfect holiday destination. 
+
+We encourage you to visit our online shop today and discover the ideal additions for your outdoor living space.  </p>
+<div class="button-wrapper">
+        <a href="https://www.sieger-onlineshop.de/" class="button" target="_blank">Discover our offers!</a>
+      </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 20px;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="50%" style="text-align: center;">
+              <img src="https://www.sieger-onlineshop.de/pub/media/wysiwyg/sieger/newsletter_bilder/moodbilder/Lima_0016_G-HG_Mood_Detail_Ruecken_001.jpg" alt="Bild 1" style="width: 90%; height: auto;" />
+            </td>
+            <td width="50%" style="padding-left: 20px;">
+              <h2 style="font-size: 20px;"></h2>
+              <p style="font-size: 14px; color: #444;">Add a touch of comfort and style to your outdoor space with our durable outdoor rugs. For a limited time, enjoy 20 percent off on selected models – all designed to withstand the elements and backed by a 3-year guarantee. Discover the variety of colors and structures now in our official online shop.</p>
+<div class="button-wrapper">
+        <a href="https://www.sieger-onlineshop.de/" class="button" target="_blank">Save up to 20%!</a>
+      </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 20px;">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="50%" style="padding-right: 20px;">
+              <h2 style="font-size: 20px;"></h2>
+              <p style="font-size: 14px; color: #444;">Round off your outdoor oasis with our durable, weather-resistant outdoor carpets – now at 20% off. Their soft textures and timeless designs perfectly complement our high-quality aluminium lounge furniture, creating a relaxing, harmonious atmosphere right in your own garden. Imagine warm summer evenings, barefoot on a stylish carpet, enjoying the comfort of your lounge set. Discover the full range now and find your perfect combination in our official online shop.</p>
+      <div class="button-wrapper">
+        <a href="https://www.sieger-onlineshop.de/" class="button" target="_blank">Discover our lounge sets!</a>
+      </div>
+            </td>
+            <td width="50%" style="text-align: center;">
+              <img src="https://www.sieger-onlineshop.de/pub/media/wysiwyg/sieger/newsletter_bilder/teppiche/Sirio_379-A-SG_309-A-SG_Gruppenbild_Model_001.jpg" alt="Bild 2" style="width: 90%; height: auto;" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<!-- Übergang Logo (zentriert, zwischen Body und Footer) -->
+<div style="width:100%;text-align:center; background:#bb1b37; padding:24px 0 0 0;">
+  <img src="https://c.emailsys1a.net/mailingassets/f77c2ef563fc117f91c413b124d1686888a24b5d.jpg#rs-inlineimage"
+       alt="Logo"
+       width="100"
+       style="display:inline-block; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); margin-bottom:-30px; background:#fff;" />
+</div>
+
+<!-- Footer -->
+<div class="footer" style="background:#bb1b37; color:#fff; text-align:center; padding:36px 20px 24px 20px; border-radius:0 0 8px 8px; font-size:15px;">
+  <div style="margin-bottom:18px;">
+    <a href="#" style="color:#fff; text-decoration:none; margin:0 12px; font-weight:500;">Imprint</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <a href="#" style="color:#fff; text-decoration:none; margin:0 12px; font-weight:500;">Privacy</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <a href="#" style="color:#fff; text-decoration:none; margin:0 12px; font-weight:500;">Contact</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <a href="#" style="color:#fff; text-decoration:none; margin:0 12px; font-weight:500;">Webshop</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <a href="#" style="color:#fff; text-decoration:underline; margin:0 12px; font-weight:700;">Unsubscribe</a>
+  </div>
+  <div style="margin-bottom:8px;">
+    <span style="font-size:13px; opacity:0.8;">Sieger Onlineshop · Zuhause im Freien · service@sieger-onlineshop.de</span>
+  </div>
+  <div style="font-size:12px; opacity:0.6;">
+    &copy; 2025 Sieger Onlineshop - constancy GmbH. All rights reserved.
+  </div>
+</div>
+</body>
+</html>
