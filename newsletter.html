@@ -18,47 +18,54 @@
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 2px 16px rgba(33,59,107,0.09);
-      position: relative;
     }
     /* Header */
     .header {
-      background: #003869;
+      background: #f3e8d2;
       color: #fff;
       padding: 40px 0 26px 0;
       text-align: center;
-      position: relative;
     }
     .logo-placeholder {
-      width: 60px; /* Kleinere Größe für das obere Logo */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
+      width: 180px;
+      margin: 0 auto 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .logo-placeholder img {
-      width: 100%; /* Logo wird auf die Breite des Containers skaliert */
+      width: 160px;
+      max-width: 90%;
       height: auto;
       display: block;
     }
-    /* Content */
-    .content {
-      padding: 24px;
+    /* Footer */
+    .footer {
+      background: #f3e8d2;
+      color: #444;
+      text-align: center;
+      padding: 32px 16px 22px 16px;
+      font-size: 14px;
+      border-radius: 0 0 16px 16px;
     }
-    .content img {
-      width: 100%;
-      max-height: 290px;
-      object-fit: cover;
-      border-radius: 10px 10px 0 0;
+    .footer a {
+      color: #c5a178;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+      color: #fff;
     }
     .button-wrapper {
-      text-align: center;
-      padding: 20px 0 25px 0;
+        text-align: center;
+        padding: 20px 0 25px 0;
     }
     .button {
       display: inline-block;
-      background-color: #bb1b37;
-      color: #ffffff !important;
+      background-color: #c5a178;
+      color: #f3e8d2 !important;
       padding: 12px 30px;
       border-radius: 22px;
       text-decoration: none;
@@ -71,39 +78,9 @@
       transition: background 0.2s;
     }
     .button:hover {
-      background-color: #003869;
+      background-color: #f3e8d2;
       color: #fff !important;
-      border: 1px solid #bb1b37;
-    }
-    /* Footer */
-    .footer-content {
-      background: #003869;
-      color: #fff;
-      text-align: center;
-      padding: 20px 16px 30px 16px; /* Padding für Textbereich */
-      font-size: 14px;
-      border-radius: 0 0 16px 16px;
-    }
-    .footer-logo {
-      width: 90px;
-      position: absolute;
-      bottom: 10px;
-      right: 10px; /* Positioniert das Logo unten rechts */
-      z-index: 2;
-    }
-    .footer-logo img {
-      width: 100%;
-      height: auto;
-    }
-    .footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 500;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-      color: #fff;
+      border: 1px solid #c5a178;
     }
     /* Abschnitt Layout */
     .section-table td {
@@ -111,7 +88,7 @@
     }
     @media (max-width:700px) {
       .container { margin: 0; border-radius: 0; }
-      .footer-content { border-radius: 0; }
+      .footer { border-radius: 0; }
     }
     @media (max-width:650px) {
       .section-table, .section-table tr, .section-table td {
@@ -130,92 +107,90 @@
     <!-- Header -->
     <div class="header">
       <div class="logo-placeholder">
-        <img src="https://www.sieger-onlineshop.de/pub/media/logo/stores/19/Sieger_Logo_RGB.jpg" alt="Logo Sieger - Zuhause im Freien">
+        <img src="https://icentris-partylite-prd-1.s3.amazonaws.com/assets/global/partylite-logo-blue.png" alt="PartyLite Logo">
       </div>
     </div>
-    <div class="content">
-      <table align="center" width="100%" cellpadding="0" cellspacing="0" style="background-color: #fff;">
-        <tr>
-          <td style="text-align: center;">
-            <img src="https://asana-user-private-us-east-1.s3.amazonaws.com/assets/35897865418996/1211327318578845/72d50836db7ce6075bf9be268ad5557f?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIBJvmXLlzg5ikGHlbW%2F0o5rSVXq3QyAEJhhQ2Y5cd%2Fp5AiBelyOkAgesyAuR%2FFKRBRqEovouTSYolkGQlu7cnCfawyqVBQgWEAAaDDQwMzQ4MzQ0Njg0MCIMDfYpMCJinhtQTlCNKvIEwBn3wpRd6OUta27Uj9MJhkpnH%2BJSz1Cm%2Fx%2BuUK3et0wDbkd7hTLxOlG9ScgLEI1CWUD0481CUeKpH6wfJ0IHUj0S1J8AHcSTn3rDQJwAHy0CgcAqwAOg6qxwW1cbumGqKPrqb6tFVm9QdUwIUDZa5NYgTaIwzI27BAIEwalE2jra7B8s3mGAwKi6%2FVyPjBjspI0JNm79EukXrVwnMlgYf1CDUZJvikBip6uYXSDlzPaD9zUKEoF8mPawlweYJtwiLnAz7wT9wWk5bap8zo181PxUWwB4TGeR%2BgPXKPO0pkriT%2Fa4MEZSArYedFcDaA3rOrYDhg42u7nADOCoxn9wX6JCPhNY0eehZZo0PTt2tHmQ9a3ECvx%2BVN4fdykC5Aaord2ey2dqPf%2F%2FzEOc52HVFzxy2vG5%2FoeVIhQGaicByDrVKdR0zb%2BsTBXaT2VPm9wXYu0ZiZEmDcH3zNSfURhgc89y0K3p2Bwrah9UBW%2FSxB9ZYFKPs%2B1Rb7OrK0Ypzeqm9nmdq0FjfbmQ%2FaNo0Uihdpkgm5xoHWTeGWqUYwjU1cfkYi7rCVCXl%2FAAOO1Do%2FgeL%2BhNp4n2jm1MjRIIPUhGfkEN1eOIniOeYzC7G%2BeL2IsAJTxHuDd8kdB%2B97%2F8udKYpi3o0PfrwwNnCWVqFTOQ%2Fs3pv3IW4pjO3XTUsjgd6n5j1QGckQjf4QfCqm3Z%2BolPf1PA3no%2B72Q8tW6QIFIF6LWz1cOxQ4T288EkWZNWyJ8edp%2F3hg6I%2Fmq75WX5%2BYDNivuMbwiXF3o6wKgaHE0sN6Bm7gMiif3VGcsiZNgZhhLy7OkhZbZ4wuWtnovvuLIlZLkw%2BIeLxgY6nAH9jaRJAd1TID%2BKY6P%2FjOvEHRUSb%2Fh0RRjDpQDpzXO3a5DHzkKockJlz63O2v31gqx3QU8pOnRW3qjQHeCiSeIMIenYJuRyrSnCqqwV0zInDn4dSlP0iWiJDOG8YjOWDcXCQVWvUP1Q9eZyvevRuYtPZHR3pfDpvyk%2FMJGUfjlcvS%2FuWnLFd7PLfOa40nIZF6IvBljkiW0DS3SIjWs%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250911T133818Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAV34L4ZY4NQTUGERN%2F20250911%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=fc89fbc49d663031ac8e6b4eb06e6e71b0d7021d27db226a6c5cc11fd0876fdf#_=_" alt="Titelbild" />
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 24px 24px 10px 24px; text-align: center;">
-            <!-- Newsletter Titel -->
-            <h1 style="font-size: 26px; color: #444; margin-bottom: 10px; margin-top:0;"></h1>
-            <p style="font-size: 16px; color: #555;">Sehr geehrte Leserinnen und Leser,
-
-Der Herbst hat begonnen und bringt Veränderungen. Nutzen Sie die letzten Sonnenstrahlen im Freien. Schutzhüllen schützen Ihre Gartenmöbel vor Witterungseinflüssen. Stapel- und Klappsessel lassen sich leicht verstauen. Entdecken Sie unser Angebot im Shop.</p>
-            <div class="button-wrapper">
-              <a href="https://www.sieger-onlineshop.de/" class="button" target="_blank">Discover now</a>
-            </div>
-          </td>
-        </tr>
-        <!-- Abschnitt 1 -->
-        <tr>
-          <td style="padding: 24px;">
-            <table width="100%" cellpadding="0" cellspacing="0" class="section-table">
-              <tr>
-                <td width="50%" style="text-align: center;">
-                  <img src="https://asana-user-private-us-east-1.s3.amazonaws.com/assets/35897865418996/1211327318578847/fabe71de48ae2f55cc0d64e8470c15e8?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIA15%2FUUg57YScvaQL2i3M%2FTYkg8R4%2F1ueJ%2BxZZNaQ99xAiBgfy0GPt8Ix7ykv03rDq2pXnlnVsdv6LwASM0JNgMASSqVBQgUEAAaDDQwMzQ4MzQ0Njg0MCIMyYh6PvgsOp3CMGNvKvIEfwl52nSxbzVaogpz2wuz5LFkGKh8GR4VwtNGLfzwtsWCYCcDAkfz0fsm617C%2B6c69kz2VB621d9BIRPgfvZpnB7Ax5fVzBp7pxQkzWRXoDN1%2B74FMrTuj6V%2Bp4u8aMyBl17%2F7XgxAqFom1vHIgdpig%2BHx8aupfFJKuGVP2DPy3t%2B9Y%2FMD2%2BdDjurvosOmQDlfm1bb2gHAiHIPuMpZod6YZmsEkHTGWHaYUP5VG46xxOwqAsjDIX%2FiAb3bY%2BpFSWwBmdb0YKR9xHbmI7Q5LV3N0bOt9sd4sEBMR7bkOJTofILNCcQ24EtfT%2B1DIqS4F%2FZGYsvsdLnt4m%2FzOHUIZLrnM8yzkrpoNL5WTOLzXQLVcB%2Bcyqc36bWxO%2FYupiEO5D3uwRcaEno2KQhHzNmPLqf0kMKyuzIbo79JtVEfsEvh5z9ak4zXLD3XPRH6nh3%2BVfJZ41nSIn%2FleDZt4SrWENzCuemrYDuB3TTYP0Czvtg6C5dk60YpVRAYj%2BSLdMg0MoNo5bXnkKJCX88B8WyZRuDIUHzd4jrTYM%2BUh8IKPlGBvFVL0j5ATHUdSeW8baWG5C%2B0%2F05FInbzlqG3dHixAAoj9lF5LP6N2aLOFLHf3UE1mmEF8QfG4P5McizzaSghA6lCzAEbrP5nFCZtTZ0tfZFrb6Aduc5jAmrRbXRVkv8nRweLIKzwYzq3S%2FgAyLi3TNJm6AIhzJfMvEPgJqqSZ1CnM8FYTC%2BkSTMDh6K1t2ightbKcB9coTFshlKkuCRK12B27ld1agjfi4KoMQyzCmjb2ne7MhMvGPIze9Rz94h1whx8qfL%2F6iMP%2FaK1MBgM5NEfBkw9sWKxgY6nAEI8FTL4SyKXo8cKmnKN%2BzlrwYrO6rZwpcuEnh1eO9L26g45p%2F33bcsicrpQ0Ob9kc9XbdNYEUzwYdFN3OBEs%2BjmziRV6xO0WRgxlzyZBor2eN0XWCLIoJMG77FZutdUE%2FW0GJ5u0DCBYgBJRET5EXrrpq4p3HA%2Bc4rLwvpdZHCHUo9kR3HrmOtWwXTT8%2BwbcmVymbGUekiFXF5YiU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250911T133818Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAV34L4ZY4FMAEGV5O%2F20250911%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=45b3928c7f4d81d9d7b0e341da365bbf5724d2291742d6f00b43b19949586959#_=_" alt="Bild 1" style="width: 92%; max-width:265px; height: auto; border-radius:10px;" />
-                </td>
-                <td width="50%" class="section-text" style="padding-left: 24px;">
-                  <h2 style="font-size: 19px; color: #444; margin-top:0;">Aktuelle Werbeaktion</h2>
-                  <p style="font-size: 15px; color: #444;">Profitieren Sie von 20 Prozent Rabatt. Gilt für Schutzhüllen. Stöbern Sie jetzt in unserem Shop.</p>
-                  <div class="button-wrapper">
-                    <a href="https://www.sieger-onlineshop.de/" class="button" target="_blank">Save now</a>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <!-- Abschnitt 2 -->
-        <tr>
-          <td style="padding: 24px;">
-            <table width="100%" cellpadding="0" cellspacing="0" class="section-table">
-              <tr>
-                <td width="50%" class="section-text" style="padding-right: 24px;">
-                  <h2 style="font-size: 19px; color: #444; margin-top:0;">Second Promotion</h2>
-                  <p style="font-size: 15px; color: #444;">Entdecken Sie die neuen Stapelsessel und profitieren Sie von einem Rabatt von 10 Prozent beim Kauf von mindestens 6 Stück. Diese eleganten Sessel bieten sowohl Komfort als auch Stil und sind perfekt für Ihre Terrasse oder Ihren Garten geeignet. Verwandeln Sie Ihren Außenbereich in eine einladende Oase der Entspannung und genießen Sie gesellige Stunden im Freien.</p>
-                  <div class="button-wrapper">
-                    <a href="https://www.sieger-onlineshop.de/" class="button" target="_blank">Discover fragrance</a>
-                  </div>
-                </td>
-                <td width="50%" style="text-align: center;">
-                  <img src="https://asana-user-private-us-east-1.s3.amazonaws.com/assets/35897865418996/1211327318578849/73485a62b1a308aa2a6e31775b8f3746?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIA15%2FUUg57YScvaQL2i3M%2FTYkg8R4%2F1ueJ%2BxZZNaQ99xAiBgfy0GPt8Ix7ykv03rDq2pXnlnVsdv6LwASM0JNgMASSqVBQgUEAAaDDQwMzQ4MzQ0Njg0MCIMyYh6PvgsOp3CMGNvKvIEfwl52nSxbzVaogpz2wuz5LFkGKh8GR4VwtNGLfzwtsWCYCcDAkfz0fsm617C%2B6c69kz2VB621d9BIRPgfvZpnB7Ax5fVzBp7pxQkzWRXoDN1%2B74FMrTuj6V%2Bp4u8aMyBl17%2F7XgxAqFom1vHIgdpig%2BHx8aupfFJKuGVP2DPy3t%2B9Y%2FMD2%2BdDjurvosOmQDlfm1bb2gHAiHIPuMpZod6YZmsEkHTGWHaYUP5VG46xxOwqAsjDIX%2FiAb3bY%2BpFSWwBmdb0YKR9xHbmI7Q5LV3N0bOt9sd4sEBMR7bkOJTofILNCcQ24EtfT%2B1DIqS4F%2FZGYsvsdLnt4m%2FzOHUIZLrnM8yzkrpoNL5WTOLzXQLVcB%2Bcyqc36bWxO%2FYupiEO5D3uwRcaEno2KQhHzNmPLqf0kMKyuzIbo79JtVEfsEvh5z9ak4zXLD3XPRH6nh3%2BVfJZ41nSIn%2FleDZt4SrWENzCuemrYDuB3TTYP0Czvtg6C5dk60YpVRAYj%2BSLdMg0MoNo5bXnkKJCX88B8WyZRuDIUHzd4jrTYM%2BUh8IKPlGBvFVL0j5ATHUdSeW8baWG5C%2B0%2F05FInbzlqG3dHixAAoj9lF5LP6N2aLOFLHf3UE1mmEF8QfG4P5McizzaSghA6lCzAEbrP5nFCZtTZ0tfZFrb6Aduc5jAmrRbXRVkv8nRweLIKzwYzq3S%2FgAyLi3TNJm6AIhzJfMvEPgJqqSZ1CnM8FYTC%2BkSTMDh6K1t2ightbKcB9coTFshlKkuCRK12B27ld1agjfi4KoMQyzCmjb2ne7MhMvGPIze9Rz94h1whx8qfL%2F6iMP%2FaK1MBgM5NEfBkw9sWKxgY6nAEI8FTL4SyKXo8cKmnKN%2BzlrwYrO6rZwpcuEnh1eO9L26g45p%2F33bcsicrpQ0Ob9kc9XbdNYEUzwYdFN3OBEs%2BjmziRV6xO0WRgxlzyZBor2eN0XWCLIoJMG77FZutdUE%2FW0GJ5u0DCBYgBJRET5EXrrpq4p3HA%2Bc4rLwvpdZHCHUo9kR3HrmOtWwXTT8%2BwbcmVymbGUekiFXF5YiU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250911T133818Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAV34L4ZY4FMAEGV5O%2F20250911%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=a55c4bef33a7beb0eb9d7c5be4196ce1de5367f9687d276b9a98e14a9791e848#_=_" alt="Bild 2" style="width: 92%; max-width:265px; height: auto; border-radius:10px;" />
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+    <table align="center" width="100%" cellpadding="0" cellspacing="0" style="background-color: #fff;">
+      <tr>
+        <td style="text-align: center;">
+          <img src="https://icentris-partylite-prd-1.s3.amazonaws.com/assets/global/hero_banners/SM25/0729_citronellasale_desktophero.webp" alt="Titelbild" style="width: 100%; max-height: 290px; object-fit: cover; border-radius:10px 10px 0 0;" />
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 24px 24px 10px 24px; text-align: center;">
+          <!-- Newsletter Titel -->
+          <h1 style="font-size: 26px; color: #444; margin-bottom: 10px; margin-top:0;"></h1>
+          <p style="font-size: 16px; color: #555;">Dear Madam and Sir,<br><br>We are thrilled to announce an exclusive promotion on our exquisite range of gardening furniture, where you can enjoy a remarkable 20% discount on all items. This is the perfect opportunity to enhance your outdoor space with stylish and comfortable furniture. We invite you to explore our collection and take advantage of this limited-time offer. Visit our shop today to discover the ideal pieces for your garden.</p>
+          <div class="button-wrapper">
+            <a href="https://www.partylite.de/" class="button" target="_blank">Discover now</a>
+          </div>
+        </td>
+      </tr>
+      <!-- Abschnitt 1 -->
+      <tr>
+        <td style="padding: 24px;">
+          <table width="100%" cellpadding="0" cellspacing="0" class="section-table">
+            <tr>
+              <td width="50%" style="text-align: center;">
+                <img src="https://icentris-partylite-prd-1.s3.amazonaws.com/assets/global/homepage_explore/sm25_image_698x6982.webp" alt="Bild 1" style="width: 92%; max-width:265px; height: auto; border-radius:10px;" />
+              </td>
+              <td width="50%" class="section-text" style="padding-left: 24px;">
+                <h2 style="font-size: 19px; color: #444; margin-top:0;">Current Promotion Details</h2>
+                <p style="font-size: 15px; color: #444;">Explore our current promotion offering exciting discounts on a wide range of products. Whether you're looking for essentials or something special, this is the perfect time to shop. Don't miss out on this limited-time opportunity to save.</p>
+                <div class="button-wrapper">
+                  <a href="https://www.partylite.de/" class="button" target="_blank">Save now</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- Abschnitt 2 -->
+      <tr>
+        <td style="padding: 24px;">
+          <table width="100%" cellpadding="0" cellspacing="0" class="section-table">
+            <tr>
+              <td width="50%" class="section-text" style="padding-right: 24px;">
+                <h2 style="font-size: 19px; color: #444; margin-top:0;">Cozy Comfort Awaits</h2>
+                <p style="font-size: 15px; color: #444;">Imagine curling up on your favorite couch with a warm cup of tea, enveloped in the soft embrace of our luxurious throw blanket. Perfect for a lazy afternoon or a movie marathon, this cozy essential enhances your home atmosphere. Treat yourself to the ultimate comfort and relish in a lazy day spent in blissful relaxation!</p>
+                <div class="button-wrapper">
+                  <a href="https://www.partylite.de/" class="button" target="_blank">Discover fragrance</a>
+                </div>
+              </td>
+              <td width="50%" style="text-align: center;">
+                <img src="https://icentris-partylite-prd-1.s3.amazonaws.com/assets/global/Campaign_Landing_Pages/SmartPlugIn/halo_smartplugin-lg2.webp" alt="Bild 2" style="width: 92%; max-width:265px; height: auto; border-radius:10px;" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- Trenn-Logo (zentriert) -->
+    <div style="width:100%;text-align:center; background:#fff; padding:18px 0 4px;">
+      <img src="https://icentris-partylite-prd-1.s3.amazonaws.com/assets/global/partylite-logo-blue.png"
+           alt="PartyLite"
+           width="90"
+           style="display:inline-block; border-radius:10px; box-shadow:0 2px 8px rgba(33,59,107,0.07); background:#fff;" />
     </div>
-    <!-- Footer Content -->
-    <div class="footer-content">
+    <!-- Footer -->
+    <div class="footer">
       <div style="margin-bottom:14px;">
-        <a href="https://www.sieger-onlineshop.de/impressum" target="_blank">Imprint</a>
+        <a href="https://www.partylite.de/impressum" target="_blank">Imprint</a>
         <span style="color:rgba(0,0,0,0.2);">|</span>
-        <a href="https://www.sieger-onlineshop.de/datenschutz" target="_blank">Privacy</a>
+        <a href="https://www.partylite.de/datenschutz" target="_blank">Privacy</a>
         <span style="color:rgba(0,0,0,0.2);">|</span>
-        <a href="https://www.sieger-onlineshop.de/kontakt" target="_blank">Contact</a>
+        <a href="https://www.partylite.de/kontakt" target="_blank">Contact</a>
         <span style="color:rgba(0,0,0,0.2);">|</span>
-        <a href="https://www.sieger-onlineshop.de/" target="_blank">Webshop</a>
+        <a href="https://www.partylite.de/" target="_blank">Webshop</a>
         <span style="color:rgba(0,0,0,0.2);">|</span>
-        <a href="#" style="color:#bb1b37; text-decoration:underline; font-weight:700;">Unsubscribe</a>
+        <a href="#" style="color:#000; text-decoration:underline; font-weight:700;">Unsubscribe</a>
       </div>
       <div style="margin-bottom:7px;">
-        <span style="font-size:13px; opacity:0.8;">Sieger - Zuhause im Freien · servixe@sieger-onlineshop.de</span>
+        <span style="font-size:13px; opacity:0.8;">PartyLite - scented candles, accessories &amp; Decor · info@partylite.de</span>
       </div>
       <div style="font-size:12px; opacity:0.6;">
-        &copy; 2025 Constancy. All rights reserved.
+        &copy; 2025 PartyLite. All rights reserved.
       </div>
-    </div>
-    <!-- Footer-Logo -->
-    <div class="footer-logo">
-      <img src="https://www.sieger-onlineshop.de/pub/media/logo/stores/19/Sieger_Logo_RGB.jpg"
-           alt="Logo Sieger - Zuhause im Freien" />
     </div>
   </div>
 </body>
